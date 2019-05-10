@@ -1,6 +1,13 @@
-$color-1: #21c2f8;
-$color-2: white;
-$color-3:  #222533;
+$color-1: #F39705;
+$color-2: #E25611;
+$color-3:  #9A2C4A;
+$color-4: #97C200;
+$color-5: #3D4C53;
+$color-6:  #62A783;
+$color-7: #F82F54;
+$color-8: #8FC567;
+
+
 
 *{
     padding: 0;
@@ -45,23 +52,20 @@ body {
         margin-right:0;
     }
 
-    &:hover {
-        background-color:$color-3;
-    }
 
     &.medium {
-        padding: 14px 48px 14px 47px;
+       
         font-size:18px;
     }
 
     &.large {
         font-size: 26px;
-        padding: 26px 95px 30px;
+    
     }
 
     &.x-large {
         font-size: 36px;
-        padding: 38px 102px 39px;
+        
     }
 
     &.round{
@@ -78,6 +82,39 @@ body {
             border-radius: 20px;
         }
     }
+
+    &.color {
+        &-1{
+            background-color: $color-1;
+        }
+        &-2{
+            background-color: $color-2;
+        }
+        &-3{
+            background-color: $color-3;
+        }
+        &-4{
+            background-color: $color-4;
+        }
+        &-5{
+            background-color: $color-5;
+        }
+        &-6{
+            background-color: $color-6;
+        }
+        &-7{
+            background-color: $color-7;
+        }
+        &-8{
+            background-color: $color-8;
+        }
+        
+    }
+
+    &:hover {
+        background-color:$color-3;
+    }
+
     
 }
 
