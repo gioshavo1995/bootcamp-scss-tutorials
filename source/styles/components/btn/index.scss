@@ -1,12 +1,13 @@
+@import 'size.scss';
+
 .btn {
     margin-right: 29px;
-    padding: 8px 37px 9px;
     border: none;
     background-color: $color-1;
     color: $color-2;
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
     font-weight: 900;
+    @include size(14px, 11px, 37px , 10.8px , 37.1px);
     line-height: 24px;
     text-decoration: none;
     text-transform: uppercase;
@@ -27,14 +28,17 @@
 
 &.medium {
     font-size: 18px;
+    @include size(18px, 14px, 46px , 14px , 46px);
 }
 
 &.large {
     font-size: 26px;
+    @include size(26px, 23px, 93px , 23px , 94px);
 }
 
 &.x-large {
     font-size: 36px;
+    @include size(36px, 27px, 102px , 27px , 103px);
 }
 
 &.round {
