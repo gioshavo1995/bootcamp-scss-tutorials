@@ -1,13 +1,6 @@
 @import 'reset';
 @import 'base';
-$color-1: #F39705;
-$color-2: #E25611;
-$color-3:  #9A2C4A;
-$color-4: #97C200;
-$color-5: #3D4C53;
-$color-6:  #62A783;
-$color-7: #F82F54;
-$color-8: #8FC567;
+@import 'palite';
 
 .row {
     display: flex;
