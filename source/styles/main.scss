@@ -7,12 +7,10 @@ $color-6:  #62A783;
 $color-7: #F82F54;
 $color-8: #8FC567;
 
-
-
-*{
-    padding: 0;
-    margin: 0;
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -23,99 +21,103 @@ body {
 .row {
     display: flex;
     align-items: flex-end;
-    margin-top: 50px;
     justify-content: center;
-    .btn{
-        margin-right: 29px;
+    margin-top: 50px;
 
-        &:last-child{
-            margin-right: 0;
+    .btn {
+        margin-right: 29px;
+        padding: 8px 37px 9px;
+        border: none;
+        background-color: $color-1;
+        color: $color-2;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 24px;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        .btn {
+            margin-right: 29px;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
-}
-
-.btn {
-    background-color: $color-1;
-    color:$color-2;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-weight:900;
-    text-transform: uppercase;
-    font-size:14px;
-    line-height: 24px;
-    padding: 8px 37px 9px;
-    margin-right: 29px;
-    border: none;
-    cursor: pointer;
 
     &:last-child {
-        margin-right:0;
+        margin-right: 0;
     }
 
-
     &.medium {
-       
-        font-size:18px;
+        font-size: 18px;
     }
 
     &.large {
         font-size: 26px;
-    
     }
 
     &.x-large {
         font-size: 36px;
-        
     }
 
-    &.round{
-        &-3{
+    &.round {
+
+        &-3 {
             border-radius: 3px;
         }
-        &-7{
+
+        &-7 {
             border-radius: 7px;
         }
-        &-12{
+
+        &-12 {
             border-radius: 12px;
         }
-        &-20{
+
+        &-20 {
             border-radius: 20px;
         }
     }
 
     &.color {
-        &-1{
+
+        &-1 {
             background-color: $color-1;
         }
-        &-2{
+
+        &-2 {
             background-color: $color-2;
         }
-        &-3{
+
+        &-3 {
             background-color: $color-3;
         }
-        &-4{
+
+        &-4 {
             background-color: $color-4;
         }
-        &-5{
+
+        &-5 {
             background-color: $color-5;
         }
-        &-6{
+
+        &-6 {
             background-color: $color-6;
         }
-        &-7{
+
+        &-7 {
             background-color: $color-7;
         }
-        &-8{
+
+        &-8 {
             background-color: $color-8;
         }
-        
     }
 
     &:hover {
-        background-color:$color-3;
+        background-color: $color-3;
     }
-
-    
 }
-
-
