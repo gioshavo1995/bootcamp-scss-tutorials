@@ -1,103 +1,96 @@
 @import 'size';
 
 .btn {
-   margin-right: 29px;
-   border: none;
-   background-color: $color-1;
-   color: $color-2;
-   font-family: 'Lato', sans-serif;
-   font-weight: 900;
+    margin-right: 29px;
+    border: none;
+    background-color: $color-1;
+    color: $color-2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 
-   @include size(14px, 8px, 37px, 9px, 37px);
+    @include size(14px, 8px, 37px, 9px, 37px);
 
-   line-height: 24px;
-   text-decoration: none;
-   text-transform: uppercase;
-   cursor: pointer;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
 
-   &:last-child {
-       margin-right: 0;
-   }
+    &:last-child {
+        margin-right: 0;
+    }
 
-   &.medium {
-       @include size(18px, 14px, 48px, 14px, 47px);
-   }
+    &.medium {
+        @include size(18px, 14px, 48px, 14px, 47px);
+    }
 
-   &.large {
-       @include size(26px, 26px, 95px, 30px, 95px);
-   }
+    &.large {
+        @include size(26px, 26px, 95px, 30px, 95px);
+    }
 
-   &.xLarge {
-       @include size(36px, 38px, 102px, 39px, 102px);
-   }
+    &.xLarge {
+        @include size(36px, 38px, 102px, 39px, 102px);
+    }
 
-   &.round {
+    &.round {
 
-       &-3 {
-           border-radius: 3px;
+        $rounds:(3,7,12,20);
+
+        @each $round in $rounds {
+
+            &-#{$round} {
+                border-radius: $round + px;
+            }
+        }
+    }
+
+    &.bg-color {
+
+        &-1 {
+            background: $color-1;
+        }
+
+        &-2 {
+            background: $color-2;
+        }
+
+        &-3 {
+            background: $color-3;
+        }
+
+        &-4 {
+            background: $color-4;
        }
 
-       &-7 {
-           border-radius: 7px;
+        &-5 {
+            background: $color-5;
        }
 
-       &-12 {
-           border-radius: 12px;
+        &-6 {
+            background: $color-6;
        }
 
-       &-20 {
-           border-radius: 20px;
-       }
-   }
-
-   &.bg-color {
-
-       &-1 {
-           background: $color-1;
+        &-7 {
+            background: $color-7;
        }
 
-       &-2 {
-           background: $color-2;
+        &-8 {
+            background: $color-8;
        }
 
-       &-3 {
-           background: $color-3;
+        &-9 {
+            background: $color-9;
        }
 
-       &-4 {
-           background: $color-4;
+        &-10 {
+            background: $color-10;
        }
 
-       &-5 {
-           background: $color-5;
-       }
-
-       &-6 {
-           background: $color-6;
-       }
-
-       &-7 {
-           background: $color-7;
-       }
-
-       &-8 {
-           background: $color-8;
-       }
-
-       &-9 {
-           background: $color-9;
-       }
-
-       &-10 {
-           background: $color-10;
-       }
-
-       &-11 {
-           background: $color-11;
+        &-11 {
+            background: $color-11;
        }
    }
 
    &:hover {
-       background-color: $color-3;
+            background-color: $color-3;
    }
 }
