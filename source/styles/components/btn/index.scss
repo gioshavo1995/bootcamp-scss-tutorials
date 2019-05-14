@@ -45,13 +45,14 @@
 
     &.bg-color {
         @each $index, $color in $palette {
+
             &-#{$index} {
                 background-color: $color;
             }
         }
-   }
+    }
 
-   &:hover {
-            background-color: color(3);
-   }
+    &:hover {
+        background-color: color(3);
+    }
 }
